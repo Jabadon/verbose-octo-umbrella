@@ -50,4 +50,17 @@ switcheroo.if.then = function(x){
   }
 switcheroo.if.then("a")
 
+load(file = "fish_data.Rdata")
 
+nrow(fish)
+ncol(fish)
+typeof(fish$year)
+str(fish)
+#character such as zoo type is text ie alphabet based
+#integer whole numbers
+#numeric data decimals
+#Posixct contains characters usually used in date
+#factor is a used to categorize the data as in male or female true or false etc
+as.character(fish$area_fac)
+remove(fish$avg.DNE.m)
+fish$avg.DNE.m = NULL
